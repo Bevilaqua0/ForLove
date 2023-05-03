@@ -5,5 +5,22 @@
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/55723423/225168342-c7a69bdd-e3f7-4552-a259-b0dce0d07292.png">
+  <img src="./forlovepage.png">
 </p>
+
+
+## Demonstração
+
+https://forloove.vercel.app/
+
+## Instalação
+
+Clone o repositório com ```https://github.com/EduardoPH/ForLet```
+
+Acesse a pasta do repositório e instale as dependências com ```npm i```
+
+Para rodar o projeto, execute ```npm start```
+
+## Autores
+
+- [Eduardo Mendes](https://www.github.com/EduardoPH)
