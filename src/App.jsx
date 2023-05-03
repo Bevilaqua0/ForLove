@@ -17,14 +17,20 @@ function App() {
     setCurrentAnswer(currentAnswer + 1)
   }
   const handleNoAnswerButton = () => {
+    const maxVerticalPosition = 80;
+    const minVerticalPosition = -80;
+    const randomVerticalPosition = Math.floor(Math.random() * (maxVerticalPosition - minVerticalPosition + 1)) + minVerticalPosition;
+  
     if (noButtonTranslate === 0) {
-      noButton.current.style.transform = "translateX(100px)"
-      noButtonTranslate = 1
+      noButton.current.style.transform = `translate( 80px, ${randomVerticalPosition}px)`;
+      noButtonTranslate = 1;
     } else {
-      noButton.current.style.transform = "translateX(0px)"
-      noButtonTranslate = 0
+      noButton.current.style.transform = `translate(-80px, ${randomVerticalPosition}px)`;
+      noButtonTranslate = 0;
     }
+
   }
+  
 
 
   return (
@@ -39,7 +45,7 @@ function App() {
             <>
               <button
                 onClick={handleYesAnswerButton}
-                className="bg-tertiary text-secondary font-bold px-6 py-2 rounded border-primary border-r-2 border-b-2 active:bg-secondary active:color-tertiary transition-colors duration-300"
+                className="bg-tertiary text-secondary font-bold px-6 py-2 rounded border-primary border-r-2 border-b-2 active:bg-secondary active:color-tertiary transition-colors duration-300 outline-none"
               >
                 Sim
               </button>
@@ -48,7 +54,7 @@ function App() {
                 <button
                   ref={noButton}
                   onClick={handleNoAnswerButton}
-                  className="bg-tertiary text-secondary font-bold px-6 py-2 rounded border-primary border-r-2 border-b-2 active:bg-secondary active:text-tertiary transition-colors duration-300"
+                  className="bg-tertiary text-secondary font-bold px-6 py-2 rounded border-primary border-r-2 border-b-2 active:bg-secondary active:text-tertiary transition-colors duration-300 outline-none"
                 >
                   Não
                 </button>
@@ -58,14 +64,14 @@ function App() {
           ) : (
             <div className="flex flex-col items-center gap-4">
               <p className="font-semibold" align="center">"
-                <b>Te amarei de Janeiro a Janeiro, até o mundo acabar"</b> - Eduardo
+                <b>Te amarei de Janeiro a Janeiro, até o mundo acabar"</b>
               </p>
 
-              <p align="center">Te amo muito Letícia, você é e sempre será o amor da minha vida</p>
+              <p align="center">Te amo muito, você é e sempre será o amor da minha vida</p>
 
               <img src={health} alt="" width={200} />
 
-              <p className="mt-10">Dudu 🤍 Letícia</p>
+              <p className="mt-10">Dudu 🤍</p>
             </div>
           )
           }

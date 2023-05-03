@@ -8,6 +8,11 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E64848;
+  background-color: #8058dd;
   color: #FFFDE3;
+}
+
+
+::selection {
+  background-color: #52009ebd;
 }
