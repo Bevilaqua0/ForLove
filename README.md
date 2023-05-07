@@ -19,7 +19,7 @@ https://forloove.vercel.app/
 
 ## Instalação
 
-Clone o repositório com ```https://github.com/EduardoPH/ForLet```
+Clone o repositório com ```https://github.com/EduardoPH/ForLove```
 
 Acesse a pasta do repositório e instale as dependências com ```npm i```
 
