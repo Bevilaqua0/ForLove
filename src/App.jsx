@@ -71,7 +71,7 @@ function App() {
 
               <img src={health} alt="" width={200} />
 
-              <p className="mt-10">Dudu 🤍</p>
+              <p className="mt-10">Seu homem  🤍</p>
             </div>
           )
           }
